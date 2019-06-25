@@ -11,7 +11,51 @@
 </head>
 
 <body>
-
+    <main class="main">
+        <form class="form" method="POST" action="http://dev.cotenfrontend.pl">
+            <p>
+                <label for="name">Imię:
+                    <input name="name" type="text" id="name">
+                </label>
+            </p>
+            <p><label for="surname">Nazwisko:
+                    <input type="text" name="surname" id="surname">
+                </label></p>
+            <p><label for="telephone">Nr telefonu:
+                    <input type="tel" name="telephone" id="telephone">
+                </label></p>
+            <p><label for="email">Adres email:
+                    <input type="email" name="email" id="email">
+                </label></p>
+            <p><label for="deviceBrand">Marka urządzenia:
+                    <input type="text" name="deviceBrand" id="deviceBrand">
+                </label> </p>
+            <label for="typeOfDevice">Rodzaj urządzenia:</label>
+            <select name="typeOfDevice" id="typeOfDevice">
+                <option value="computer">komputer</option>
+                <option value="television">telewizor</option>
+                <option value="amplifier">wzmacniacz</option>
+                <option value="player device">odtwrzacz CD, DVD, BlueRay</option>
+            </select>
+            <p><label for="age">Wiek urządzenia:
+                    <input type="number" name="age" id="age">
+                </label> </p>
+            <p><label for="deviceStatus">Stan urządzenia:
+                    <input type="range" min="0" max="100" step="5" name="deviceStatus" id="deviceStatus">
+                </label> </p>
+            <fieldset>
+                <legend>Sprzęt był serwisowany?</legend>
+                <p><input type="radio" value="1" name="repairedDevice" id="yes"><label for="yes">Tak</label>
+                </p>
+                <p><input checked type="radio" value="0" name="repairedDevice" id="no"><label for="no">Nie</label>
+                </p>
+            </fieldset>
+            <p><label for="desc">Opisz problem</label>
+                <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+            </p>
+            <input type="submit">
+        </form>
+    </main>
 
 </body>
 
