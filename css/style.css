@@ -7,3 +7,16 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+}
